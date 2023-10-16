@@ -4,6 +4,7 @@ import {
     StyleSheet,
     TextInput,
 } from 'react-native';
+import { Icon } from 'react-native-paper';
 
 const CustomInput = (props) => {
     const {
@@ -34,8 +35,13 @@ const styles = StyleSheet.create({
         padding: 10,
         marginVertical: 5,
     },
-    input: {
-
+    input: {},
+    searchSection: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fff',
     },
 });
 
