@@ -9,7 +9,10 @@ import {
 import CustomInput from '../../components/CustomInput';
 import CustomButton from "../../components/CustomButton";
 
-const SignInScreen = () => {
+const SignInScreen = (props) => {
+
+    const { navigation } = props;
+
     const { height: windowHeight } = useWindowDimensions();
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
@@ -67,7 +70,10 @@ const SignInScreen = () => {
                         <Text style={styles.alternateSignInText}>
                             Don't Have an account? {''}
                         </Text>
-                        <Text style={styles.questionLink}>
+                        <Text
+                            style={styles.questionLink}
+                            onPress={() => navigation.navigate('Register')}
+                        >
                             Sign Up
                         </Text>
                     </View>

@@ -54,6 +54,16 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 7,
     },
+    container_navigate: {
+        backgroundColor: '#f6f6f6',
+        borderColor: 'black',
+        alignItems: 'center',
+        padding: 5,
+        marginVertical: 5,
+        borderWidth: 2,
+        borderRadius: 7,
+        width: '20%',
+    },
     text: {
         color: 'white',
         fontWeight: 'bold',
@@ -66,6 +76,11 @@ const styles = StyleSheet.create({
     },
     text_tertiary: {
         color: '#4D7E3D',
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
+    text_navigate: {
+        color: 'black',
         fontWeight: 'bold',
         fontSize: 16,
     },
