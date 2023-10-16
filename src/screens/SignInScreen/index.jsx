@@ -3,7 +3,7 @@ import {
     View,
     Text,
     StyleSheet,
-    useWindowDimensions,
+    //useWindowDimensions,
     ScrollView,
 } from 'react-native';
 import CustomInput from '../../components/CustomInput';
@@ -13,7 +13,7 @@ const SignInScreen = (props) => {
 
     const { navigation } = props;
 
-    const { height: windowHeight } = useWindowDimensions();
+    //const { height: windowHeight } = useWindowDimensions();
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
 
