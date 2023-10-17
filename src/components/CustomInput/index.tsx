@@ -4,7 +4,6 @@ import {
     StyleSheet,
     TextInput,
 } from 'react-native';
-import { Icon } from 'react-native-paper';
 
 const CustomInput = (props) => {
     const {
