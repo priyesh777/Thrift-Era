@@ -28,18 +28,18 @@ const WelcomeScreen = (props) => {
                 <Text style={styles.slogan}>
                     ────── Step towards sustainability ──────
                 </Text>
-                <View style={styles.buttonGroup}>
-                    <CustomButton
-                        text="Sign In"
-                        type="tertiary"
-                        onPress={() => navigation.navigate('SignIn')}
-                    />
-                    <CustomButton
-                        text="Get Started"
-                        type="primary"
-                        onPress={() => navigation.navigate('Register')}
-                    />
-                </View>
+            </View>
+            <View style={styles.buttonGroup}>
+                <CustomButton
+                    text="Sign In"
+                    type="tertiary_medium"
+                    onPress={() => navigation.navigate('SignIn')}
+                />
+                <CustomButton
+                    text="Get Started"
+                    type="primary_medium"
+                    onPress={() => navigation.navigate('Register')}
+                />
             </View>
         </ScrollView>
     )
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     buttonGroup: {
         alignItems: 'stretch',
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-around',
     }
 });
 

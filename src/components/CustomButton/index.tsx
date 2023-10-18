@@ -9,7 +9,7 @@ const CustomButton = (props) => {
     const {
         onPress,
         text,
-        type = "primary"
+        type = "primary",
     } = props;
 
     return (
@@ -40,10 +40,18 @@ const styles = StyleSheet.create({
         backgroundColor: '#4D7E3D',
         alignItems: 'center',
         padding: 15,
-        marginVertical: 5,
         borderWidth: 2,
         borderColor: '#4D7E3D',
-        borderRadius: 7,
+        borderRadius: 50,
+    },
+    container_primary_medium: {
+        backgroundColor: '#4D7E3D',
+        alignItems: 'center',
+        padding: 15,
+        borderWidth: 2,
+        borderColor: '#4D7E3D',
+        borderRadius: 50,
+        width: "45%",
     },
     container_tertiary: {
         backgroundColor: '#f6f6f6',
@@ -52,17 +60,17 @@ const styles = StyleSheet.create({
         padding: 15,
         marginVertical: 5,
         borderWidth: 2,
-        borderRadius: 7,
+        borderRadius: 50,
     },
-    container_navigate: {
+    container_tertiary_medium: {
         backgroundColor: '#f6f6f6',
-        borderColor: 'black',
+        borderColor: '#4D7E3D',
         alignItems: 'center',
-        padding: 5,
+        padding: 15,
         marginVertical: 5,
         borderWidth: 2,
-        borderRadius: 7,
-        width: '20%',
+        borderRadius: 50,
+        width: "45%",
     },
     text: {
         color: 'white',
@@ -75,6 +83,11 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
     text_tertiary: {
+        color: '#4D7E3D',
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
+    text_tertiary_medium: {
         color: '#4D7E3D',
         fontWeight: 'bold',
         fontSize: 16,
