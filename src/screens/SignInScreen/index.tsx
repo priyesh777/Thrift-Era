@@ -17,11 +17,11 @@ const SignInScreen = (props) => {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
 
-    const onSignInPressed = () => {
-        console.warn('Clicked signed in::>>');
+    const handleSignIn = () => {
+        console.warn('Click signed in:::::::>>');
     };
 
-    const signInWithGoogle = () => {
+    const handleGoogleSignIn = () => {
         console.warn('Sign In with Google::>>');
     };
 
@@ -56,7 +56,7 @@ const SignInScreen = (props) => {
                     <CustomButton
                         text="Sign In"
                         type="primary"
-                        onPress={onSignInPressed}
+                        onPress={handleSignIn}
                     />
                     <Text style={styles.signInWith}>
                         ────────  Or Sign In with  ────────
@@ -64,7 +64,7 @@ const SignInScreen = (props) => {
                     <CustomButton
                         text="Sign In With Google"
                         type="tertiary"
-                        onPress={signInWithGoogle}
+                        onPress={handleGoogleSignIn}
                     />
                     <View style={styles.inlineQuestion}>
                         <Text style={styles.alternateSignInText}>
