@@ -11,7 +11,7 @@ const CustomButton = (props) => {
         text,
         type = "primary"
     } = props;
-
+    console.log('This is random::>>');
     return (
         <Pressable
             style={[styles.container, styles[`container_${type}`]]}
